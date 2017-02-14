@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBA-8Y-OYq">
@@ -25,10 +25,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GBA-8Y-OYq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="KVj-xR-vxr"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GBA-8Y-OYq" secondAttribute="bottom" constant="280" id="dDv-Mo-sPl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GBA-8Y-OYq" secondAttribute="trailing" constant="77" id="hGM-68-9af"/>
-                            <constraint firstItem="GBA-8Y-OYq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="239" id="kFe-fV-PDw"/>
+                            <constraint firstItem="GBA-8Y-OYq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KVj-xR-vxr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GBA-8Y-OYq" secondAttribute="bottom" id="dDv-Mo-sPl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GBA-8Y-OYq" secondAttribute="trailing" id="hGM-68-9af"/>
+                            <constraint firstItem="GBA-8Y-OYq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kFe-fV-PDw"/>
                         </constraints>
                     </view>
                     <connections>

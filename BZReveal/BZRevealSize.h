@@ -17,6 +17,7 @@ typedef NS_OPTIONS(NSUInteger, BZRevealAttribute){
     BZRevealAttributeSize                         = 1 << 1,
     BZRevealAttributeFont                         = 1 << 2,
     
+    //Combo Attributes
     BZRevealAttributeComboSizeFont                = 6,
 };
 typedef NS_OPTIONS(NSUInteger, BZRevealType){
@@ -26,6 +27,7 @@ typedef NS_OPTIONS(NSUInteger, BZRevealType){
     BZRevealTypeInvariableRight                   = 1 << 3,
     BZRevealTypeInvariableBottom                  = 1 << 4,
     
+    //Combo Attributes
     BZRevealTypeInvariableComboTopLeft            = 6,
     BZRevealTypeInvariableComboTopRight           = 10,
     BZRevealTypeInvariableComboTopBottom          = 18,

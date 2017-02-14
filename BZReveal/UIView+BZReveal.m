@@ -17,7 +17,7 @@
         NSLog(@"You must decide ScreenSize at fisrt!'BZScreenSizeSetWidth: Height:' or you can not use this method 'addSubview: WithFrame:'");
         return;
     }
-    [svw BZLayoutViewWithViewFrame:fr SurperView:self];
+    [svw BZLayoutViewWithViewFrame:fr SurperView:self Invariable:nil];
 }
 
 -(void)addSubview:(UIView *)svw WithFrame:(CGRect)fr Invariable:( BZRevealInvariable * _Nullable )md{
@@ -57,15 +57,14 @@
            SCreenW:(CGFloat)sw
            ScreenH:(CGFloat)sh
         SurperView:(UIView *)view
-        Invariable:( BZRevealInvariable * _Nullable )md{
+        Invariable:(BZRevealInvariable * _Nullable )md{
     
     Class cc = NSClassFromString(NSStringFromClass([self class]));
     id vw = nil;
     vw = [[cc alloc]init];
     [view addSubview:vw];
     if (vw) {
-        [BZRevealSize BZtypeAnalyzeType:md attributes:md];
-        [vw BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:frame SurperView:view];
+        [vw BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:frame SurperView:view Invariable:md];
     }
     return vw;
 }
@@ -79,16 +78,25 @@
         return nil;
     }
     
-    return [self initWithFrame:frame SCreenW:sc.scWidth ScreenH:sc.scHeight SurperView:view];
+    return [self initWithFrame:frame SCreenW:sc.scWidth ScreenH:sc.scHeight SurperView:view Invariable:nil];
 }
 
 -(id)initWithFrame:(CGRect)frame SurperView:(UIView *)view Invariable:( BZRevealInvariable * _Nullable )md{
     BZScreen *sc = [BZScreen ScreensharedManager];
     if ([BZRevealSize hadSetScreenSize:sc]){
-        NSLog(@"You must decide ScreenSize at fisrt!'BZScreenSizeSetWidth: Height:' or you can not use this method 'initWithFrame: SurperView:'");
+        NSLog(@"You must decide ScreenSize at fisrt!'BZScreenSizeSetWidth: Height:' or you can not use this method 'initWithFrame: SurperView: Invariable:'");
         return nil;
     }
     return [self initWithFrame:frame SCreenW:sc.scWidth ScreenH:sc.scHeight SurperView:view Invariable:md];
+}
+
+-(void)BZLayoutViewWithSCreenW:(CGFloat)sw
+                       ScreenH:(CGFloat)sh
+                     ViewFrame:(CGRect)fr
+                    SurperView:(UIView *)vw 
+                    Invariable:(BZRevealInvariable * _Nullable )md{
+    [BZRevealSize BZtypeAnalyzeType:md attributes:md];
+    [self BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:fr SurperView:vw];
 }
 
 -(void)BZLayoutViewWithSCreenW:(CGFloat)sw
@@ -106,6 +114,8 @@
         CGFloat fontSize = sf.font.pointSize;
         if ([self isKindOfClass:[UITextView class]])
         {
+            //The size of text in UITextView is decided,
+            //if you want change it,please use the attribute InvariableFont
             if (sc.scWidth/sc.scHeight == 375/667){
                 fontSize = 17.0f;
             }else{
@@ -204,14 +214,24 @@
         NSLog(@"You must decide ScreenSize at fisrt! 'BZScreenSizeSetWidth: Height:' or you can not use this method 'BZLayoutViewWithViewFrame: SurperView:'");
         return;
     }
-    [self BZLayoutViewWithSCreenW:sc.scWidth ScreenH:sc.scHeight ViewFrame:fr SurperView:vw];
+    [self BZLayoutViewWithSCreenW:sc.scWidth ScreenH:sc.scHeight ViewFrame:fr SurperView:vw  Invariable:nil];
 }
 
--(void)BZLayoutViewWithViewFrame:(CGRect)fr SurperView:(UIView *)vw Invariable:(BZRevealInvariable *)md{
-    [BZRevealSize BZtypeAnalyzeType:md attributes:md];
-    [self BZLayoutViewWithViewFrame:fr SurperView:vw];
+-(void)BZLayoutViewWithViewFrame:(CGRect)fr SurperView:(UIView *)vw Invariable:(  BZRevealInvariable * _Nullable )md{
+    BZScreen *sc = [BZScreen ScreensharedManager];
+    if ([BZRevealSize hadSetScreenSize:sc]){
+        NSLog(@"You must decide ScreenSize at fisrt! 'BZScreenSizeSetWidth: Height:' or you can not use this method 'BZLayoutViewWithViewFrame: SurperView: Invariable:'");
+        return;
+    }
+        [self BZLayoutViewWithSCreenW:sc.scWidth ScreenH:sc.scHeight ViewFrame:fr SurperView:vw Invariable:md];
 }
 
+
+/**
+ Set word size
+
+ @param sc Size modle
+ */
 -(void)fontSizeSetByScreenSize:(BZSize *)sc{
     if ([self isKindOfClass:[UIButton class]]) {
         UIButton *sf = (UIButton *)self;
