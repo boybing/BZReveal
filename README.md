@@ -25,7 +25,9 @@ http://blog.csdn.net/jhy835239104/article/details/46803769
 推荐写在AppDelegate中.例子是以iphoneSe的尺寸来设置的:
 ![image](https://github.com/boybing/BZReveal/blob/master/delegate.png)
 
-BZReveal可以修改xib生成的UI以及纯代码UI的autolayout规则.以下是storyboard生成的view:
+BZReveal可以修改xib生成的UI以及纯代码UI的autolayout规则.
+
+以下是storyboard生成的view:
 ![image](https://github.com/boybing/BZReveal/blob/master/stroyboard.png)
 
 使用Reveal浏览并修改:
