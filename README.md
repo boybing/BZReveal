@@ -6,9 +6,9 @@
 由于xib横展性不是很强,这款软件就帮助了纯代码搭界面的小伙伴们很多很多.
 
 修改前:
-     ![image](https://github.com/boybing/BZReveal/blob/master/reveal1.png)
+![image](https://github.com/boybing/BZReveal/blob/master/reveal1.png)
 修改后:
-     ![image](https://github.com/boybing/BZReveal/blob/master/reveal2.png)
+![image](https://github.com/boybing/BZReveal/blob/master/reveal2.png)
  
  
 这边给大家提供reveal介绍链接:http://security.ios-wiki.com/issue-3-4/
@@ -20,3 +20,27 @@ http://blog.csdn.net/jhy835239104/article/details/46803769
 之后的工作很多伙伴会交给masonry之类的库,确实的确蛮好用的.我编写这个函数的目的是让排版更加简单.
 可直接通过reveal上面显示的frame布局.有人会问,ios原生的frame方法也可以进行布局,何必多此一举.
 的确,原生方法也是一种选择,但是在设备的适配上面还是有缺陷的,所以我写了基于autolayout的BZReveal.
+
+函数使用介绍:首先在使用前请在函数入口处调用类BZReveal中的BZScreenSizeSetWidth: Height:函数,确定编辑窗口的长宽.
+推荐写在AppDelegate中.例子是以iphoneSe的尺寸来设置的:
+![image](https://github.com/boybing/BZReveal/blob/master/delegate.png)
+
+BZReveal可以修改xib生成的UI以及纯代码UI的autolayout规则.以下是storyboard生成的view:
+![image](https://github.com/boybing/BZReveal/blob/master/stroyboard.png)
+
+使用Reveal浏览并修改:
+![image](https://github.com/boybing/BZReveal/blob/master/storyChangeR.png)
+
+通过函数BZLayoutViewWithViewFrame: SurperView: Invariable: 修改规则,值是Reveal中修改的值:
+iphoneSE的情况下:
+![image](https://github.com/boybing/BZReveal/blob/master/storyboardSe.png)
+
+iphone6的情况下:
+![image](https://github.com/boybing/BZReveal/blob/master/storyboardSe.png)
+
+iphonePro只适配iphone的情况下:
+![image](https://github.com/boybing/BZReveal/blob/master/storyboardPro.png)
+可以看到尺寸会根据px的增减,做相应的增减
+
+注意:目前只能适配ipad,iphone其中之一,universal选项暂不支持.横竖屏也请先调用size class,在之后的版本解决
+![image](https://github.com/boybing/BZReveal/blob/master/storyboarduniversal.png)
