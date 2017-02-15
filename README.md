@@ -46,3 +46,5 @@ iphonePro只适配iphone的情况下:
 
 注意:目前只能适配ipad,iphone其中之一,universal选项暂不支持.横竖屏也请先调用size class,在之后的版本解决
 ![image](https://github.com/boybing/BZReveal/blob/master/storyboarduniversal.png)
+
+不仅是view 所有继承UIView的函数控件都能通过函数initWithFrame: SurperView: Invariable:创建
