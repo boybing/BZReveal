@@ -14,6 +14,11 @@
 @end
 
 @implementation ViewController
+
+-(void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
+    
+                NSLog(@"%f-------%f",[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height);
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    UITraitCollection *newCollection =  self.traitCollection;
