@@ -117,9 +117,11 @@
             //The size of text in UITextView is decided,
             //if you want change it,please use the attribute InvariableFont
             if (sc.scWidth/sc.scHeight == 375/667){
-                fontSize = 17.0f;
+                if (!sc.textViewFontSize) fontSize = 17.0f;
+                else fontSize = sc.textViewFontSize;
             }else{
-                fontSize = 30.2f * sc.scWidth / sc.scHeight;
+                if (!sc.textViewFontSize) fontSize = 17.0f * [UIScreen mainScreen].bounds.size.width / sc.scWidth;
+                else fontSize = sc.textViewFontSize * [UIScreen mainScreen].bounds.size.width / sc.scWidth;
             }
         }
         size = [BZRevealSize analyzeRightFrameWithSCreenW:sw ScreenH:sh ViewFrame:fr font:fontSize];

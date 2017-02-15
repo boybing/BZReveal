@@ -167,7 +167,6 @@
     }else{
         size.originalRight = [UIScreen mainScreen].bounds.size.width -(sc.scWidth - fr.origin.x -fr.size.width) - fr.size.width;
         size.originalBottom = [UIScreen mainScreen].bounds.size.height - (sc.scHeight - fr.origin.y - fr.size.height)- fr.size.height;
-        sc.InvariableSize = NO;
     }
     return size;
 }

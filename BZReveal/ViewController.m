@@ -17,7 +17,7 @@
 
 -(void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
     
-                NSLog(@"%f-------%f",[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height);
+                NSLog(@"%f",[UIScreen mainScreen].bounds.size.width/[UIScreen mainScreen].bounds.size.height);
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -86,23 +86,35 @@
 //    [self.view addSubview:yy];
     [_vv setAlpha:0.0f];
     
-    [BZReveal BZScreenSizeSetWidth:320 Height:568];
+//    [BZReveal BZScreenSizeSetWidth:320 Height:568];
+    BZRevealDefalut *df = [[BZRevealDefalut alloc]init];
+//    df.DefaultRight = YES;
+//    df.DefaultSize = YES;
+    df.DefaultFont = YES;
+//    df.DefaultLeft = YES;
+//    df.DefaultTop = YES;
+//    df.DefaultBottom = YES;
+    [BZReveal TextViewFontSize:10];
+    
     UIView *vw = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 568) SurperView:self.view Invariable:nil];
     [vw setBackgroundColor:[UIColor redColor]];
     [self.view addSubview:vw];
     
-    UITextField *v1 = [[UITextField alloc]init];
-    v1.text = @"textfield";
+    UITextView *v1 = [[UITextView alloc]init];
+    v1.text = @"UITextView";
     [v1 setBackgroundColor:[UIColor yellowColor]];
+    BZRevealInvariable *md = [[BZRevealInvariable alloc]init];
+    md.attr = BZRevealAttributeSize;
     [self.view addSubview:v1 WithFrame:CGRectMake(0, 50, 50, 50) Invariable:nil];
     
-    UITextField *v2 = [[UITextField alloc]init];
-    v2.text = @"textfield";
+    [BZReveal BZSetNextCodeDefaultAtrributes:df];
+    UITextView *v2 = [[UITextView alloc]init];
+    v2.text = @"UITextView";
     [v2 setBackgroundColor:[UIColor purpleColor]];
     [self.view addSubview:v2 WithFrame:CGRectMake(135, 50, 50, 50) Invariable:nil];
     
-    UITextField *v3 = [[UITextField alloc]init];
-    v3.text = @"textfield";
+    UITextView *v3 = [[UITextView alloc]init];
+    v3.text = @"UITextView";
     [v3 setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:v3 WithFrame:CGRectMake(270,50, 50, 50) Invariable:nil];
     

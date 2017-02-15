@@ -58,4 +58,10 @@
  @param md  you can add defalut type
  */
 +(void)BZSetNextCodeDefaultAtrributes:(BZRevealDefalut * _Nullable )md;
+
+
+/**
+ If you want to use textview auto size you have to set it.
+ */
++(void)TextViewFontSize:(CGFloat)size;
 @end

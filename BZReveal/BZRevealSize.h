@@ -120,6 +120,12 @@ typedef NS_OPTIONS(NSUInteger, BZRevealType){
  DefaultFont Flag
  */
 @property(assign,nonatomic) BOOL DefaultFont;
+
+/**
+ textViewSize
+ */
+@property(assign,nonatomic) CGFloat textViewFontSize;
+
 @end
 
 /**

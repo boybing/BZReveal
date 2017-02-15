@@ -11,6 +11,10 @@
 @implementation BZRevealDefalut
 @end    
 @implementation BZReveal
++(void)TextViewFontSize:(CGFloat)size{
+    BZScreen *sc = [BZScreen ScreensharedManager];
+    sc.textViewFontSize = size;
+}
 +(void)BZScreenSizeSetWidth:(CGFloat)wid
                      Height:(CGFloat)hei{
     BZScreen *sc = [BZScreen ScreensharedManager];
