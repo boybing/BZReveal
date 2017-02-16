@@ -19,8 +19,8 @@
 
  @return view
  */
--(id)initWithFrame:(CGRect)frame
-        SurperView:(UIView *)view;
+-(instancetype _Nonnull)initWithFrame:(CGRect)frame
+        SurperView:( UIView * _Nonnull )view;
 
 /**
  Autolayout at init time and must had the screenSize
@@ -31,8 +31,8 @@
  
  @return view
  */
--(id)initWithFrame:(CGRect)frame
-        SurperView:(UIView *)view
+-(instancetype _Nonnull)initWithFrame:(CGRect)frame
+        SurperView:( UIView * _Nonnull )view
         Invariable:( BZRevealInvariable * _Nullable )md;
 
 /**
@@ -42,7 +42,7 @@
  @param vw Surperview thar we want to refer to
  */
 -(void)BZLayoutViewWithViewFrame:(CGRect)fr
-                      SurperView:(UIView *)vw;
+                      SurperView:( UIView * _Nonnull )vw;
 
 /**
  Autolayout by the easy way and must had the screenSize
@@ -52,7 +52,7 @@
  @param md Invariable types and attributes
  */
 -(void)BZLayoutViewWithViewFrame:(CGRect)fr
-                      SurperView:(UIView *)vw
+                      SurperView:( UIView * _Nonnull )vw
                       Invariable:(BZRevealInvariable * _Nullable )md;
 
 /**
@@ -61,7 +61,7 @@
  @param fr Frame
  @param svw Subview
  */
--(void)addSubview:(UIView *)svw
+-(void)addSubview:(UIView * _Nonnull)svw
         WithFrame:(CGRect)fr;
 
 /**
@@ -71,7 +71,7 @@
  @param svw Subview
  @param md Invariable types and attributes
  */
--(void)addSubview:(UIView *)svw
+-(void)addSubview:(UIView * _Nonnull)svw
         WithFrame:(CGRect)fr
        Invariable:(BZRevealInvariable * _Nullable )md;
 

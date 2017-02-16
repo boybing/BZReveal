@@ -17,7 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [_vv BZLayoutViewWithViewFrame:CGRectMake(16, 20, 288, 200) SurperView:self.view Invariable:nil];
+    [_vv setAlpha:0.0f];
+    
+    UITableView *table = [[UITableView alloc]initWithFrame:CGRectMake(16, 20, 288, 200) SurperView:self.view];
+    [self.view addSubview:table];
     
     
     

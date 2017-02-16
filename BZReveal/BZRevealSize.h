@@ -45,7 +45,7 @@ typedef NS_OPTIONS(NSUInteger, BZRevealType){
  Screen model
  */
 @interface BZScreen : NSObject
-+(BZScreen *)ScreensharedManager;
++(BZScreen * _Nonnull)ScreensharedManager;
 
 /**
  ScreenWidth attribute
@@ -178,7 +178,7 @@ typedef NS_OPTIONS(NSUInteger, BZRevealType){
  
  @return Analyzed data
  */
-+(BZSize *)analyzeRightFrameWithSCreenW:(NSInteger)sw
++(BZSize * _Nonnull)analyzeRightFrameWithSCreenW:(NSInteger)sw
                                 ScreenH:(NSInteger)sh
                               ViewFrame:(CGRect)fr;
 
@@ -192,7 +192,7 @@ typedef NS_OPTIONS(NSUInteger, BZRevealType){
  
  @return Analyzed data
  */
-+(BZSize *)analyzeRightFrameWithSCreenW:(NSInteger)sw
++(BZSize * _Nonnull)analyzeRightFrameWithSCreenW:(NSInteger)sw
                                 ScreenH:(NSInteger)sh
                               ViewFrame:(CGRect)fr
                                    font:(CGFloat)font;
@@ -202,7 +202,7 @@ typedef NS_OPTIONS(NSUInteger, BZRevealType){
  
  @param vw View we aimed at
  */
-+(void)constraintsClear:(UIView *)vw;
++(void)constraintsClear:(UIView * _Nonnull)vw;
 
 
 /**
@@ -210,7 +210,7 @@ typedef NS_OPTIONS(NSUInteger, BZRevealType){
  
  @return Yes or No
  */
-+(BOOL)hadSetScreenSize:(BZScreen *)sc;
++(BOOL)hadSetScreenSize:(BZScreen * _Nonnull)sc;
 
 
 /**

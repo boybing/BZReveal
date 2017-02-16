@@ -35,41 +35,34 @@
           SCreenW:(CGFloat)sw
           ScreenH:(CGFloat)sh{
     [self addSubview:svw];
-    [svw BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:fr SurperView:self];
+    [svw BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:fr SurperView:self Invariable:nil];
 }
 
--(id)initWithFrame:(CGRect)frame
+-(instancetype)initWithFrame:(CGRect)frame
            SCreenW:(CGFloat)sw
            ScreenH:(CGFloat)sh
         SurperView:(UIView *)view{
     
-    Class cc = NSClassFromString(NSStringFromClass([self class]));
-    id vw = nil;
-    vw = [[cc alloc]init];
-    [view addSubview:vw];
-    if (vw) {
-        [vw BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:frame SurperView:view];
+    if (self = [self init]) {
+        [view addSubview:self];
+        [self BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:frame SurperView:view Invariable:nil];
     }
-    return vw;
+    return self;
 }
 
--(id)initWithFrame:(CGRect)frame
+-(instancetype)initWithFrame:(CGRect)frame
            SCreenW:(CGFloat)sw
            ScreenH:(CGFloat)sh
         SurperView:(UIView *)view
         Invariable:(BZRevealInvariable * _Nullable )md{
-    
-    Class cc = NSClassFromString(NSStringFromClass([self class]));
-    id vw = nil;
-    vw = [[cc alloc]init];
-    [view addSubview:vw];
-    if (vw) {
-        [vw BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:frame SurperView:view Invariable:md];
-    }
-    return vw;
+        if (self = [self init]) {
+            [view addSubview:self];
+            [self BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:frame SurperView:view Invariable:md];
+        }
+        return self;
 }
 
--(id)initWithFrame:(CGRect)frame
+-(instancetype)initWithFrame:(CGRect)frame
         SurperView:(UIView *)view{
     
     BZScreen *sc = [BZScreen ScreensharedManager];
@@ -187,7 +180,6 @@
         }else{
             [vw addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:vw attribute:NSLayoutAttributeLeft multiplier:1.0 constant:size.pointX]];
         }
-        combotwo = 0;
     }
     
     if (sc.InvariableBottom == YES && comboone == 0) {
@@ -202,7 +194,6 @@
         }else{
             [vw addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:vw attribute:NSLayoutAttributeTop multiplier:1.0 constant:size.pointY]];
         }
-        comboone = 0;
     }
     
     [self layoutIfNeeded];
