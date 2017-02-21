@@ -109,8 +109,4 @@ static char bz_phonec = '\0';
     phoner = nil;
     phonec = nil;
 }
-
--(void)viewWillAppear:(BOOL)animated{
-    
-}
 @end

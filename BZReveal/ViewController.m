@@ -33,14 +33,14 @@
     [btn setBackgroundColor:[UIColor redColor]];
     [self.view addSubview:btn];
     
-//    UITableView *table = [[UITableView alloc]init];
-//    [self BZLayoutIphoneWillChangeWhenTransitionRegular:^{
-//        [table BZLayoutViewWithViewFrame:CGRectMake(16, 20, 700, 200) SurperView:self.view];
-//    } Compact:^{
-//        [table BZLayoutViewWithViewFrame:CGRectMake(16, 20, 288, 200) SurperView:self.view];
-//    }];
-//    
-//    [self.view addSubview:table];
+    UITableView *table = [[UITableView alloc]init];
+    [self BZLayoutIphoneWillChangeWhenTransitionRegular:^{
+        [table BZLayoutViewWithViewFrame:CGRectMake(16, 20, 700, 200) SurperView:self.view];
+    } Compact:^{
+        [table BZLayoutViewWithViewFrame:CGRectMake(16, 20, 288, 200) SurperView:self.view];
+    }];
+    
+    [self.view addSubview:table];
     
     
     
