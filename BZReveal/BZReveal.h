@@ -9,8 +9,10 @@
 
 #if __has_include(<BZReveal/BZReveal.h>)
 #import <BZReveal/UIView+BZReveal.h>
+#import <BZReveal/UIViewController+BZSizeClass.h>
 #else
 #import "UIView+BZReveal.h"
+#import "UIViewController+BZSizeClass.h"
 #endif
 @interface BZRevealDefalut : NSObject
 /**

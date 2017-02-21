@@ -143,7 +143,8 @@
                               ViewFrame:(CGRect)fr
                                    font:(CGFloat)font{
     BZSize *size = [self analyzeRightFrameWithSCreenW:sw ScreenH:sh ViewFrame:fr];
-    size.font =font * ([UIScreen mainScreen].bounds.size.width / sw);
+    BZScreen *sc = [BZScreen ScreensharedManager];
+    size.font =font * (sc.width/ sw);
     NSLog(@"font:%f",size.font);
     return size;
     
@@ -153,26 +154,29 @@
                               ViewFrame:(CGRect)fr {
     BZScreen *sc = [BZScreen ScreensharedManager];
     BZSize *size = [[BZSize alloc]init];
-    size.width = fr.size.width * ([UIScreen mainScreen].bounds.size.width /sw);
+    size.width = fr.size.width * (sc.width /sw);
     size.originalWidth =  fr.size.width;
-    size.height = fr.size.height * ([UIScreen mainScreen].bounds.size.height / sh);
+    size.height = fr.size.height * (sc.height / sh);
     size.originalHeight = fr.size.height;
-    size.pointX = fr.origin.x * ([UIScreen mainScreen].bounds.size.width / sw);
+    size.pointX = fr.origin.x * (sc.width / sw);
     size.originalLeft = fr.origin.x;
-    size.pointY = fr.origin.y * ([UIScreen mainScreen].bounds.size.height / sh);
+    size.pointY = fr.origin.y * (sc.height / sh);
     size.originalTop = fr.origin.y;
     if (sc.InvariableSize == NO) {
-        size.originalRight = [UIScreen mainScreen].bounds.size.width -(sc.scWidth - fr.origin.x -fr.size.width)- size.width;
-        size.originalBottom = [UIScreen mainScreen].bounds.size.height - (sc.scHeight - fr.origin.y - fr.size.height) - size.height;
+        size.originalRight = sc.width -(sc.scWidth - fr.origin.x -fr.size.width)- size.width;
+        size.originalBottom = sc.height - (sc.scHeight - fr.origin.y - fr.size.height) - size.height;
     }else{
-        size.originalRight = [UIScreen mainScreen].bounds.size.width -(sc.scWidth - fr.origin.x -fr.size.width) - fr.size.width;
-        size.originalBottom = [UIScreen mainScreen].bounds.size.height - (sc.scHeight - fr.origin.y - fr.size.height)- fr.size.height;
+        size.originalRight = sc.width -(sc.scWidth - fr.origin.x -fr.size.width) - fr.size.width;
+        size.originalBottom = sc.height - (sc.scHeight - fr.origin.y - fr.size.height)- fr.size.height;
     }
+                NSLog(@"width%f originalWidth%f height%f originalHeight%f pointX%f originalLeft%f pointY%f originalTop%f",size.width,size.originalWidth,size.height,size.originalHeight,size.pointX,size.originalLeft,size.pointY,size.originalTop);
     return size;
 }
 
+
 +(void)constraintsClear:(UIView *)vw{
     [vw removeConstraints:vw.constraints];
+    [vw.superview removeConstraints:vw.superview.constraints];
 }
 
 +(BOOL)hadSetScreenSize:(BZScreen *)sc{

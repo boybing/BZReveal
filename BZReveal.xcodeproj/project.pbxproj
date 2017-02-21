@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A44F1E501E4D46B400292CA9 /* BZReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = A44F1E4F1E4D46B400292CA9 /* BZReveal.m */; };
+		A49635951E567FF100ACB361 /* UIViewController+BZSizeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A49635941E567FF100ACB361 /* UIViewController+BZSizeClass.m */; };
 		A4AD09551E4AF238003C6B63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AD09541E4AF238003C6B63 /* main.m */; };
 		A4AD09581E4AF238003C6B63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AD09571E4AF238003C6B63 /* AppDelegate.m */; };
 		A4AD095B1E4AF238003C6B63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AD095A1E4AF238003C6B63 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		A44F1E4F1E4D46B400292CA9 /* BZReveal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZReveal.m; sourceTree = "<group>"; };
+		A49635931E567FF100ACB361 /* UIViewController+BZSizeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BZSizeClass.h"; sourceTree = "<group>"; };
+		A49635941E567FF100ACB361 /* UIViewController+BZSizeClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BZSizeClass.m"; sourceTree = "<group>"; };
 		A4AD09501E4AF238003C6B63 /* BZReveal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BZReveal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AD09541E4AF238003C6B63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4AD09561E4AF238003C6B63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				A4AD09721E4AF4AF003C6B63 /* UIView+BZReveal.m */,
 				A4AD09741E4B062B003C6B63 /* BZRevealSize.h */,
 				A4AD09751E4B062B003C6B63 /* BZRevealSize.m */,
+				A49635931E567FF100ACB361 /* UIViewController+BZSizeClass.h */,
+				A49635941E567FF100ACB361 /* UIViewController+BZSizeClass.m */,
 			);
 			name = BZReveal;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4AD095B1E4AF238003C6B63 /* ViewController.m in Sources */,
+				A49635951E567FF100ACB361 /* UIViewController+BZSizeClass.m in Sources */,
 				A4AD09581E4AF238003C6B63 /* AppDelegate.m in Sources */,
 				A4AD09761E4B062B003C6B63 /* BZRevealSize.m in Sources */,
 				A4AD09551E4AF238003C6B63 /* main.m in Sources */,
@@ -304,7 +310,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.sunyard.com.BZReveal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -317,7 +323,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.sunyard.com.BZReveal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

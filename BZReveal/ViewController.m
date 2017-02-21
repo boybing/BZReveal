@@ -12,17 +12,18 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *vv;
 @end
-
 @implementation ViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [_vv setAlpha:0.0f];
-    
-    UITableView *table = [[UITableView alloc]initWithFrame:CGRectMake(16, 20, 288, 200) SurperView:self.view];
+    UITableView *table = [[UITableView alloc]init];
+    [self BZLayoutIphoneWillChangeWhenTransitionRegular:^{
+        [table BZLayoutViewWithViewFrame:CGRectMake(16, 20, 700, 200) SurperView:self.view];
+    } Compact:^{
+        [table BZLayoutViewWithViewFrame:CGRectMake(16, 20, 288, 200) SurperView:self.view];
+    }];
     [self.view addSubview:table];
-    
-    
     
     
     

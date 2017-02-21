@@ -19,6 +19,8 @@
                      Height:(CGFloat)hei{
     BZScreen *sc = [BZScreen ScreensharedManager];
     sc.scWidth = wid;
+    sc.width = [UIScreen mainScreen].bounds.size.width;
+    sc.height = [UIScreen mainScreen].bounds.size.height;
     sc.scHeight = hei;
 }
 

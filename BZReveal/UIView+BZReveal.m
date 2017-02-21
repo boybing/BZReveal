@@ -98,7 +98,7 @@
                     SurperView:(UIView *)vw{
     
     if (self.translatesAutoresizingMaskIntoConstraints)self.translatesAutoresizingMaskIntoConstraints = NO;
-    if (self.constraints.count>0)[BZRevealSize constraintsClear:self];
+    [BZRevealSize constraintsClear:self];
     BZSize *size = nil;
     BZScreen *sc = [BZScreen ScreensharedManager];
     if ([self respondsToSelector:@selector(font)]){
@@ -113,8 +113,8 @@
                 if (!sc.textViewFontSize) fontSize = 17.0f;
                 else fontSize = sc.textViewFontSize;
             }else{
-                if (!sc.textViewFontSize) fontSize = 17.0f * [UIScreen mainScreen].bounds.size.width / sc.scWidth;
-                else fontSize = sc.textViewFontSize * [UIScreen mainScreen].bounds.size.width / sc.scWidth;
+                if (!sc.textViewFontSize) fontSize = 17.0f * sc.width / sc.scWidth;
+                else fontSize = sc.textViewFontSize * sc.width / sc.scWidth;
             }
         }
         size = [BZRevealSize analyzeRightFrameWithSCreenW:sw ScreenH:sh ViewFrame:fr font:fontSize];
@@ -129,9 +129,9 @@
     if ((sc.InvariableTop && sc.InvariableBottom) || (sc.InvariableLeft && sc.InvariableRight) ||(sc.InvariableTop && sc.InvariableLeft && sc.InvariableRight && sc.InvariableBottom)) {
         if (sc.InvariableTop && sc.InvariableLeft && sc.InvariableRight && sc.InvariableBottom) {
             [BZRevealSize constraintsClear:self];
-            [vw addConstraint:[NSLayoutConstraint   constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:[UIScreen mainScreen].bounds.size.width - sc.scWidth + size.originalWidth]];
+            [vw addConstraint:[NSLayoutConstraint   constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:sc.width - sc.scWidth + size.originalWidth]];
             
-            [vw addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:[UIScreen mainScreen].bounds.size.height - sc.scHeight + size.originalHeight]];
+            [vw addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:sc.height - sc.scHeight + size.originalHeight]];
             comboone = 1;
             combotwo = 1;
         }else{
@@ -139,12 +139,12 @@
                 [BZRevealSize constraintsClear:self];
                 [vw addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:size.width]];
                 
-                [vw addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:[UIScreen mainScreen].bounds.size.height - sc.scHeight + size.originalHeight]];
+                [vw addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:sc.height - sc.scHeight + size.originalHeight]];
                 comboone = 1;
             }
             if (sc.InvariableLeft && sc.InvariableRight) {
                 [BZRevealSize constraintsClear:self];
-                [vw addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:[UIScreen mainScreen].bounds.size.width - sc.scWidth + size.originalWidth]];
+                [vw addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:sc.width - sc.scWidth + size.originalWidth]];
                 
                 [vw addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:size.height]];
                 combotwo = 1;
@@ -210,7 +210,7 @@
     [self BZLayoutViewWithSCreenW:sc.scWidth ScreenH:sc.scHeight ViewFrame:fr SurperView:vw  Invariable:nil];
 }
 
--(void)BZLayoutViewWithViewFrame:(CGRect)fr SurperView:(UIView *)vw Invariable:(  BZRevealInvariable * _Nullable )md{
+-(void)BZLayoutViewWithViewFrame:(CGRect)fr SurperView:(UIView *)vw Invariable:(BZRevealInvariable * _Nullable )md{
     BZScreen *sc = [BZScreen ScreensharedManager];
     if ([BZRevealSize hadSetScreenSize:sc]){
         NSLog(@"You must decide ScreenSize at fisrt! 'BZScreenSizeSetWidth: Height:' or you can not use this method 'BZLayoutViewWithViewFrame: SurperView: Invariable:'");

@@ -54,12 +54,27 @@ typedef NS_OPTIONS(NSUInteger, BZRevealType){
  */
 @property(assign,nonatomic) CGFloat scWidth;
 
+
+/**
+ ScreenWidth attribute
+ If you want use method without SCreenW,
+ you should add the number at first.
+ */
+@property(assign,nonatomic) CGFloat width;
+
 /**
  ScreenHeight attribute
  If you want use method without ScreenH,
  you should add the number at first.
  */
 @property(assign,nonatomic) CGFloat scHeight;
+
+/**
+ ScreenHeight attribute
+ If you want use method without ScreenH,
+ you should add the number at first.
+ */
+@property(assign,nonatomic) CGFloat height;
 
 /**
  InvariableTop Flag
@@ -125,7 +140,6 @@ typedef NS_OPTIONS(NSUInteger, BZRevealType){
  textViewSize
  */
 @property(assign,nonatomic) CGFloat textViewFontSize;
-
 @end
 
 /**
@@ -211,7 +225,6 @@ typedef NS_OPTIONS(NSUInteger, BZRevealType){
  @return Yes or No
  */
 +(BOOL)hadSetScreenSize:(BZScreen * _Nonnull)sc;
-
 
 /**
  Invariable type Analyze
