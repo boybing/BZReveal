@@ -308,7 +308,7 @@
 				DEVELOPMENT_TEAM = RAAN75SRP6;
 				INFOPLIST_FILE = BZReveal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.sunyard.com.BZReveal;
+				PRODUCT_BUNDLE_IDENTIFIER = bz.BZReveal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,7 +321,7 @@
 				DEVELOPMENT_TEAM = RAAN75SRP6;
 				INFOPLIST_FILE = BZReveal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.sunyard.com.BZReveal;
+				PRODUCT_BUNDLE_IDENTIFIER = bz.BZReveal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

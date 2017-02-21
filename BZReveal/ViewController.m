@@ -17,13 +17,30 @@
     [super viewDidLoad];
     
     [_vv setAlpha:0.0f];
-    UITableView *table = [[UITableView alloc]init];
-    [self BZLayoutIphoneWillChangeWhenTransitionRegular:^{
-        [table BZLayoutViewWithViewFrame:CGRectMake(16, 20, 700, 200) SurperView:self.view];
-    } Compact:^{
-        [table BZLayoutViewWithViewFrame:CGRectMake(16, 20, 288, 200) SurperView:self.view];
-    }];
-    [self.view addSubview:table];
+    
+    
+    
+    UITextView *txt = [[UITextView alloc]initWithFrame:CGRectMake(30, 20, 200, 30) SurperView:self.view Invariable:nil];
+    txt.text = @"TextView";
+    [self.view addSubview:txt];
+    
+    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(30, 60, 200, 30) SurperView:self.view Invariable:nil];
+    lab.text = @"Label";
+    [self.view addSubview:lab];
+
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(30, 100, 200, 30) SurperView:self.view Invariable:nil];
+    [btn setTitle:@"Buttton" forState:UIControlStateNormal];
+    [btn setBackgroundColor:[UIColor redColor]];
+    [self.view addSubview:btn];
+    
+//    UITableView *table = [[UITableView alloc]init];
+//    [self BZLayoutIphoneWillChangeWhenTransitionRegular:^{
+//        [table BZLayoutViewWithViewFrame:CGRectMake(16, 20, 700, 200) SurperView:self.view];
+//    } Compact:^{
+//        [table BZLayoutViewWithViewFrame:CGRectMake(16, 20, 288, 200) SurperView:self.view];
+//    }];
+//    
+//    [self.view addSubview:table];
     
     
     

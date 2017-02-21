@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [BZReveal BZScreenSizeSetWidth:320 Height:568];
+    [BZReveal BZScreenSizeSetWidth:375 Height:667];
     return YES;
 }
 

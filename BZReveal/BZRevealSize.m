@@ -145,7 +145,6 @@
     BZSize *size = [self analyzeRightFrameWithSCreenW:sw ScreenH:sh ViewFrame:fr];
     BZScreen *sc = [BZScreen ScreensharedManager];
     size.font =font * (sc.width/ sw);
-    NSLog(@"font:%f",size.font);
     return size;
     
 }
@@ -169,14 +168,16 @@
         size.originalRight = sc.width -(sc.scWidth - fr.origin.x -fr.size.width) - fr.size.width;
         size.originalBottom = sc.height - (sc.scHeight - fr.origin.y - fr.size.height)- fr.size.height;
     }
-                NSLog(@"width%f originalWidth%f height%f originalHeight%f pointX%f originalLeft%f pointY%f originalTop%f",size.width,size.originalWidth,size.height,size.originalHeight,size.pointX,size.originalLeft,size.pointY,size.originalTop);
     return size;
 }
 
 
 +(void)constraintsClear:(UIView *)vw{
+    [vw.superview.constraints enumerateObjectsUsingBlock:^(__kindof NSLayoutConstraint * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if([obj.firstItem isEqual:vw])[vw.superview removeConstraint:obj];
+    }];
+    
     [vw removeConstraints:vw.constraints];
-    [vw.superview removeConstraints:vw.superview.constraints];
 }
 
 +(BOOL)hadSetScreenSize:(BZScreen *)sc{
