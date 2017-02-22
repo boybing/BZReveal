@@ -11,7 +11,7 @@
 ![image](https://github.com/boybing/pic/blob/master/reveal2.png)
  
  
-这边给大家提供reveal介绍链接:http://security.ios-wiki.com/issue-3-4/
+这边给大家提供reveal介绍链接:http://www.jianshu.com/p/1041a4b342f0
 
 Reveal原生方法需要在工程添加包,不是很方便.这边提供不修改工程使用Reveal的方法链接:
 http://blog.csdn.net/jhy835239104/article/details/46803769
