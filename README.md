@@ -47,46 +47,47 @@ IpadPro只适配iphone的情况下:
 
 开放函数:
 
-初始化设置布局屏幕大小,之后会根据此大小对别的屏幕大小的设备控件大小进行计算
 BZScreenSizeSetWidth:Height:
+初始化设置布局屏幕大小,之后会根据此大小对别的屏幕大小的设备控件大小进行计算
 
+BZSetNextCodeDefaultAtrributes:
 设置属性初始值,对属性初始值进行设置,之后的布局会根据初始值来实现布局.
 例如:左magrin的距离不变,之后就算屏幕大小改变,我们离左边的距离始终是不变的.
-BZSetNextCodeDefaultAtrributes:
 
-由于textView的特殊性,要预先确定textView的字体大小.不填默认Iphone6下的字体大小是17
 TextViewFontSize:
+由于textView的特殊性,要预先确定textView的字体大小.不填默认Iphone6下的字体大小是17
 
 UIView分类
 
-创建对象并对对象用layout代码进行页面的排布,必须填写SuperView.
 initWithFrame:SurperView:
+创建对象并对对象用layout代码进行页面的排布,必须填写SuperView.
 
+initWithFrame: SurperView: Invariable:
 创建对象并对对象用layout代码进行页面的排布,必须填写SuperView.
 属性选填,可以控制上下左右margin不变以及字体不做缩放,控件大小不缩放.
-initWithFrame: SurperView: Invariable:
 
-对对象用layout代码进行页面的排布,必须填写SuperView.
 BZLayoutViewWithViewFrame:SurperView:
+对对象用layout代码进行页面的排布,必须填写SuperView.
 
+BZLayoutViewWithViewFrame:SurperView:Invariable:
 对对象用layout代码进行页面的排布,必须填写SuperView.
 属性选填,可以控制上下左右margin不变以及字体不做缩放,控件大小不缩放.
-BZLayoutViewWithViewFrame:SurperView:Invariable:
 
+addSubview:WithFrame:
 在addsubview时对象用layout代码进行页面的排布,必须填写SuperView.
 属性选填,可以控制上下左右margin不变以及字体不做缩放,控件大小不缩放.
-addSubview:WithFrame:
 
+addSubview:WithFrame:Invariable:
 在addsubview时对对象用layout代码进行页面的排布,必须填写SuperView.
 属性选填,可以控制上下左右margin不变以及字体不做缩放,控件大小不缩放.
-addSubview:WithFrame:Invariable:
+
 
 UIViewController分类
 
-根据设备类型判断加载有关的页面排布代码,类似于sizeclass,这个是针对Ipad横竖屏的
 BZLayoutIpadWillChangeWhenTransitionRegular:Compact:
+根据设备类型判断加载有关的页面排布代码,类似于sizeclass,这个是针对Ipad横竖屏的
 
-根据设备类型判断加载有关的页面排布代码,类似于sizeclass,这个是针对Iphone横竖屏的
 BZLayoutIphoneWillChangeWhenTransitionRegular:Compact:
+根据设备类型判断加载有关的页面排布代码,类似于sizeclass,这个是针对Iphone横竖屏的
 
 结合这些函数能快速解决所有有关UI排布问题,有宝贵的意见或建议请联系我.Email:ybxxx070@126.com
