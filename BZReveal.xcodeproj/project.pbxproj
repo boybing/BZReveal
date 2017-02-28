@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A44F1E501E4D46B400292CA9 /* BZReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = A44F1E4F1E4D46B400292CA9 /* BZReveal.m */; };
+		A45060DC1E63B48600C941B0 /* CodeUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45060DA1E63B48600C941B0 /* CodeUIController.m */; };
+		A45060DD1E63B48600C941B0 /* CodeUIController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A45060DB1E63B48600C941B0 /* CodeUIController.xib */; };
 		A49635951E567FF100ACB361 /* UIViewController+BZSizeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A49635941E567FF100ACB361 /* UIViewController+BZSizeClass.m */; };
 		A4AD09551E4AF238003C6B63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AD09541E4AF238003C6B63 /* main.m */; };
 		A4AD09581E4AF238003C6B63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AD09571E4AF238003C6B63 /* AppDelegate.m */; };
@@ -21,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		A44F1E4F1E4D46B400292CA9 /* BZReveal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZReveal.m; sourceTree = "<group>"; };
+		A45060D91E63B48600C941B0 /* CodeUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeUIController.h; sourceTree = "<group>"; };
+		A45060DA1E63B48600C941B0 /* CodeUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeUIController.m; sourceTree = "<group>"; };
+		A45060DB1E63B48600C941B0 /* CodeUIController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CodeUIController.xib; sourceTree = "<group>"; };
 		A49635931E567FF100ACB361 /* UIViewController+BZSizeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BZSizeClass.h"; sourceTree = "<group>"; };
 		A49635941E567FF100ACB361 /* UIViewController+BZSizeClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BZSizeClass.m"; sourceTree = "<group>"; };
 		A4AD09501E4AF238003C6B63 /* BZReveal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BZReveal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +78,9 @@
 				A4AD096A1E4AF29C003C6B63 /* BZReveal */,
 				A4AD09561E4AF238003C6B63 /* AppDelegate.h */,
 				A4AD09571E4AF238003C6B63 /* AppDelegate.m */,
+				A45060D91E63B48600C941B0 /* CodeUIController.h */,
+				A45060DA1E63B48600C941B0 /* CodeUIController.m */,
+				A45060DB1E63B48600C941B0 /* CodeUIController.xib */,
 				A4AD09591E4AF238003C6B63 /* ViewController.h */,
 				A4AD095A1E4AF238003C6B63 /* ViewController.m */,
 				A4AD095C1E4AF238003C6B63 /* Main.storyboard */,
@@ -168,6 +176,7 @@
 			files = (
 				A4AD09631E4AF238003C6B63 /* LaunchScreen.storyboard in Resources */,
 				A4AD09601E4AF238003C6B63 /* Assets.xcassets in Resources */,
+				A45060DD1E63B48600C941B0 /* CodeUIController.xib in Resources */,
 				A4AD095E1E4AF238003C6B63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +190,7 @@
 			files = (
 				A4AD095B1E4AF238003C6B63 /* ViewController.m in Sources */,
 				A49635951E567FF100ACB361 /* UIViewController+BZSizeClass.m in Sources */,
+				A45060DC1E63B48600C941B0 /* CodeUIController.m in Sources */,
 				A4AD09581E4AF238003C6B63 /* AppDelegate.m in Sources */,
 				A4AD09761E4B062B003C6B63 /* BZRevealSize.m in Sources */,
 				A4AD09551E4AF238003C6B63 /* main.m in Sources */,

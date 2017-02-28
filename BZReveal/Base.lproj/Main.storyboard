@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,21 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBA-8Y-OYq">
-                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4O-0U-cVY">
+                                <state key="normal" title="布局说明"/>
+                                <connections>
+                                    <action selector="codeUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F0f-WV-s2w"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GBA-8Y-OYq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KVj-xR-vxr"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GBA-8Y-OYq" secondAttribute="bottom" id="dDv-Mo-sPl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GBA-8Y-OYq" secondAttribute="trailing" id="hGM-68-9af"/>
-                            <constraint firstItem="GBA-8Y-OYq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kFe-fV-PDw"/>
+                            <constraint firstItem="C4O-0U-cVY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="3Wp-K9-nki"/>
+                            <constraint firstItem="C4O-0U-cVY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dmA-Qq-PRY"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="vv" destination="GBA-8Y-OYq" id="Vur-H3-I9h"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

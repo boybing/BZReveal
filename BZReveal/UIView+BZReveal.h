@@ -15,44 +15,44 @@
  Autolayout at init time and must had the screenSize
 
  @param frame Frame of the view
- @param view  Surperview thar we want to refer to
+ @param view  SuperView thar we want to refer to
 
  @return view
  */
 -(instancetype _Nonnull)initWithFrame:(CGRect)frame
-        SurperView:( UIView * _Nonnull )view;
+        SuperView:( UIView * _Nonnull )view;
 
 /**
  Autolayout at init time and must had the screenSize
  
  @param frame Frame of the view
- @param view  Surperview thar we want to refer to
+ @param view  SuperView thar we want to refer to
  @param md Invariable types and attributes
  
  @return view
  */
 -(instancetype _Nonnull)initWithFrame:(CGRect)frame
-        SurperView:( UIView * _Nonnull )view
+        SuperView:( UIView * _Nonnull )view
         Invariable:( BZRevealInvariable * _Nullable )md;
 
 /**
  Autolayout by the easy way and must had the screenSize
  
  @param fr Frame of the view
- @param vw Surperview thar we want to refer to
+ @param vw SuperView thar we want to refer to
  */
 -(void)BZLayoutViewWithViewFrame:(CGRect)fr
-                      SurperView:( UIView * _Nonnull )vw;
+                      SuperView:( UIView * _Nonnull )vw;
 
 /**
  Autolayout by the easy way and must had the screenSize
  
  @param fr Frame of the view
- @param vw Surperview thar we want to refer to
+ @param vw SuperView thar we want to refer to
  @param md Invariable types and attributes
  */
 -(void)BZLayoutViewWithViewFrame:(CGRect)fr
-                      SurperView:( UIView * _Nonnull )vw
+                      SuperView:( UIView * _Nonnull )vw
                       Invariable:(BZRevealInvariable * _Nullable )md;
 
 /**

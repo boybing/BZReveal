@@ -17,7 +17,7 @@
         NSLog(@"You must decide ScreenSize at fisrt!'BZScreenSizeSetWidth: Height:' or you can not use this method 'addSubview: WithFrame:'");
         return;
     }
-    [svw BZLayoutViewWithViewFrame:fr SurperView:self Invariable:nil];
+    [svw BZLayoutViewWithViewFrame:fr SuperView:self Invariable:nil];
 }
 
 -(void)addSubview:(UIView *)svw WithFrame:(CGRect)fr Invariable:( BZRevealInvariable * _Nullable )md{
@@ -27,7 +27,7 @@
         NSLog(@"You must decide ScreenSize at fisrt!'BZScreenSizeSetWidth: Height:' or you can not use this method 'addSubview: WithFrame: Invariable:'");
         return;
     }
-    [svw BZLayoutViewWithViewFrame:fr SurperView:self Invariable:md];
+    [svw BZLayoutViewWithViewFrame:fr SuperView:self Invariable:md];
 }
 
 -(void)addSubview:(UIView *)svw
@@ -35,17 +35,17 @@
           SCreenW:(CGFloat)sw
           ScreenH:(CGFloat)sh{
     [self addSubview:svw];
-    [svw BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:fr SurperView:self Invariable:nil];
+    [svw BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:fr SuperView:self Invariable:nil];
 }
 
 -(instancetype)initWithFrame:(CGRect)frame
            SCreenW:(CGFloat)sw
            ScreenH:(CGFloat)sh
-        SurperView:(UIView *)view{
+        SuperView:(UIView *)view{
     
     if (self = [self init]) {
         [view addSubview:self];
-        [self BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:frame SurperView:view Invariable:nil];
+        [self BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:frame SuperView:view Invariable:nil];
     }
     return self;
 }
@@ -53,49 +53,49 @@
 -(instancetype)initWithFrame:(CGRect)frame
            SCreenW:(CGFloat)sw
            ScreenH:(CGFloat)sh
-        SurperView:(UIView *)view
+        SuperView:(UIView *)view
         Invariable:(BZRevealInvariable * _Nullable )md{
         if (self = [self init]) {
             [view addSubview:self];
-            [self BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:frame SurperView:view Invariable:md];
+            [self BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:frame SuperView:view Invariable:md];
         }
         return self;
 }
 
 -(instancetype)initWithFrame:(CGRect)frame
-        SurperView:(UIView *)view{
+        SuperView:(UIView *)view{
     
     BZScreen *sc = [BZScreen ScreensharedManager];
     if ([BZRevealSize hadSetScreenSize:sc]){
-        NSLog(@"You must decide ScreenSize at fisrt!'BZScreenSizeSetWidth: Height:' or you can not use this method 'initWithFrame: SurperView:'");
+        NSLog(@"You must decide ScreenSize at fisrt!'BZScreenSizeSetWidth: Height:' or you can not use this method 'initWithFrame: SuperView:'");
         return nil;
     }
     
-    return [self initWithFrame:frame SCreenW:sc.scWidth ScreenH:sc.scHeight SurperView:view Invariable:nil];
+    return [self initWithFrame:frame SCreenW:sc.scWidth ScreenH:sc.scHeight SuperView:view Invariable:nil];
 }
 
--(id)initWithFrame:(CGRect)frame SurperView:(UIView *)view Invariable:( BZRevealInvariable * _Nullable )md{
+-(id)initWithFrame:(CGRect)frame SuperView:(UIView *)view Invariable:( BZRevealInvariable * _Nullable )md{
     BZScreen *sc = [BZScreen ScreensharedManager];
     if ([BZRevealSize hadSetScreenSize:sc]){
-        NSLog(@"You must decide ScreenSize at fisrt!'BZScreenSizeSetWidth: Height:' or you can not use this method 'initWithFrame: SurperView: Invariable:'");
+        NSLog(@"You must decide ScreenSize at fisrt!'BZScreenSizeSetWidth: Height:' or you can not use this method 'initWithFrame: SuperView: Invariable:'");
         return nil;
     }
-    return [self initWithFrame:frame SCreenW:sc.scWidth ScreenH:sc.scHeight SurperView:view Invariable:md];
+    return [self initWithFrame:frame SCreenW:sc.scWidth ScreenH:sc.scHeight SuperView:view Invariable:md];
 }
 
 -(void)BZLayoutViewWithSCreenW:(CGFloat)sw
                        ScreenH:(CGFloat)sh
                      ViewFrame:(CGRect)fr
-                    SurperView:(UIView *)vw 
+                    SuperView:(UIView *)vw 
                     Invariable:(BZRevealInvariable * _Nullable )md{
     [BZRevealSize BZtypeAnalyzeType:md attributes:md];
-    [self BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:fr SurperView:vw];
+    [self BZLayoutViewWithSCreenW:sw ScreenH:sh ViewFrame:fr SuperView:vw];
 }
 
 -(void)BZLayoutViewWithSCreenW:(CGFloat)sw
                        ScreenH:(CGFloat)sh
                      ViewFrame:(CGRect)fr
-                    SurperView:(UIView *)vw{
+                    SuperView:(UIView *)vw{
     
     if (self.translatesAutoresizingMaskIntoConstraints)self.translatesAutoresizingMaskIntoConstraints = NO;
     [BZRevealSize constraintsClear:self];
@@ -196,22 +196,22 @@
 }
 
 -(void)BZLayoutViewWithViewFrame:(CGRect)fr
-                      SurperView:(UIView *)vw{
+                      SuperView:(UIView *)vw{
     BZScreen *sc = [BZScreen ScreensharedManager];
     if ([BZRevealSize hadSetScreenSize:sc]){
-        NSLog(@"You must decide ScreenSize at fisrt! 'BZScreenSizeSetWidth: Height:' or you can not use this method 'BZLayoutViewWithViewFrame: SurperView:'");
+        NSLog(@"You must decide ScreenSize at fisrt! 'BZScreenSizeSetWidth: Height:' or you can not use this method 'BZLayoutViewWithViewFrame: SuperView:'");
         return;
     }
-    [self BZLayoutViewWithSCreenW:sc.scWidth ScreenH:sc.scHeight ViewFrame:fr SurperView:vw  Invariable:nil];
+    [self BZLayoutViewWithSCreenW:sc.scWidth ScreenH:sc.scHeight ViewFrame:fr SuperView:vw  Invariable:nil];
 }
 
--(void)BZLayoutViewWithViewFrame:(CGRect)fr SurperView:(UIView *)vw Invariable:(BZRevealInvariable * _Nullable )md{
+-(void)BZLayoutViewWithViewFrame:(CGRect)fr SuperView:(UIView *)vw Invariable:(BZRevealInvariable * _Nullable )md{
     BZScreen *sc = [BZScreen ScreensharedManager];
     if ([BZRevealSize hadSetScreenSize:sc]){
-        NSLog(@"You must decide ScreenSize at fisrt! 'BZScreenSizeSetWidth: Height:' or you can not use this method 'BZLayoutViewWithViewFrame: SurperView: Invariable:'");
+        NSLog(@"You must decide ScreenSize at fisrt! 'BZScreenSizeSetWidth: Height:' or you can not use this method 'BZLayoutViewWithViewFrame: SuperView: Invariable:'");
         return;
     }
-        [self BZLayoutViewWithSCreenW:sc.scWidth ScreenH:sc.scHeight ViewFrame:fr SurperView:vw Invariable:md];
+        [self BZLayoutViewWithSCreenW:sc.scWidth ScreenH:sc.scHeight ViewFrame:fr SuperView:vw Invariable:md];
 }
 
 
