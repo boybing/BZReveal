@@ -118,37 +118,41 @@ Can see the size will increase or decrease according to the px, accordingly, inc
 
 Open the function:
 
-BZScreenSizeSetWidth: Height:
+'BZScreenSizeSetWidth: Height:'
 Initialization setting layout screen size, then according to the size of other screen size equipment control size calculation
 
-BZSetNextCodeDefaultAtrributes:
+'BZSetNextCodeDefaultAtrributes:'
 Initial value setting properties to set of attributes, the initial value, then the layout of the will to achieve layout according to the initial value.For example: left magrin distance remains unchanged, even after the screen size change, we the distance from the left is always the same.
 
-TextViewFontSize:
+'TextViewFontSize:'
 Due to the particularity of textView to predetermined textView font size. Don't fill the default font size is 17 Iphone6
 
 UIView category
-InitWithFrame: SurperView:
+
+'InitWithFrame: SurperView:'
 Create the object and the object using the configuration of the page layout code, must fill in SuperView.
 
-InitWithFrame: SurperView: Invariable:
+'InitWithFrame: SurperView: Invariable:'
 Create the object and the object using the configuration of the page layout code, must fill in SuperView.Attribute is optional, can control the up and down or so margin is constant and font do scaling, size doesn't zoom control.
 
-BZLayoutViewWithViewFrame: SurperView:
+'BZLayoutViewWithViewFrame: SurperView:'
 The layout code for object page arrangement, must fill in SuperView.
 
-BZLayoutViewWithViewFrame: SurperView: Invariable:
+'BZLayoutViewWithViewFrame: SurperView: Invariable:'
 The layout code for object page arrangement, must fill in SuperView.Attribute is optional, can control the up and down or so margin is constant and font do scaling, size doesn't zoom control.
 
-AddSubview: WithFrame:
+'AddSubview: WithFrame:'
 When addsubview objects using layout code page arrangement, must fill in SuperView.Attribute is optional, can control the up and down or so margin is constant and font do scaling, size doesn't zoom control.
 
-AddSubview: WithFrame: Invariable:
+'AddSubview: WithFrame: Invariable:'
 At addsubview object using the configuration of the page layout code, must fill in SuperView.Attribute is optional, can control the up and down or so margin is constant and font do scaling, size doesn't zoom control.
 
 UIViewController category
-BZLayoutIpadWillChangeWhenTransitionRegular: Compact:
+
+'BZLayoutIpadWillChangeWhenTransitionRegular: Compact:'
 Judgment depending on the type of equipment to load the relevant page configuration code, similar to the sizeclass, this is for the relation of screen
 
-BZLayoutIphoneWillChangeWhenTransitionRegular: Compact:
-Judgment depending on the type of equipment to load the relevant page configuration code, similar to the sizeclass, this is for the Iphone the relation of screenCombining these functions can quickly solve all the questions about the UI configuration, have valuable opinions or Suggestions please contact me. Email:ybxxx070@126.com
+'BZLayoutIphoneWillChangeWhenTransitionRegular: Compact:'
+Judgment depending on the type of equipment to load the relevant page configuration code, similar to the sizeclass, this is for the Iphone the relation of screenCombining.
+
+these functions can quickly solve all the questions about the UI configuration, have valuable opinions or Suggestions please contact me. Email:ybxxx070@126.com
