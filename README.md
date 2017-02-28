@@ -42,7 +42,8 @@ Iphone6的情况下:
 
 IpadPro只适配iphone的情况下:
 ![image](https://github.com/boybing/pic/blob/master/storyboardPro.png)
-可以看到尺寸会根据px的增减,做相应的增减
+可以看到尺寸会根据px的增减,做相应的增减,不必要再考虑不同设备的适配了!
+前提是设备的长宽比基本一致,是因为Ipad和Iphone的长宽比是不同的,导致显示的结果有差异.
 
 不仅是view 所有继承UIView的函数控件都能通过函数initWithFrame: SurperView: Invariable:创建.
 
