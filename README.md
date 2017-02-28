@@ -34,13 +34,13 @@ BZReveal可以修改xib生成的UI以及纯代码UI的autolayout规则.
 ![image](https://github.com/boybing/pic/blob/master/storyChangeR.png)
 
 通过函数BZLayoutViewWithViewFrame: SurperView: Invariable: 修改规则,值是Reveal中修改的值:
-iphoneSE的情况下:
+IphoneSE的情况下:
 ![image](https://github.com/boybing/pic/blob/master/storyboardSe.png)
 
-iphone6的情况下:
+Iphone6的情况下:
 ![image](https://github.com/boybing/pic/blob/master/storyboardSe.png)
 
-iphonePro只适配iphone的情况下:
+IpadPro只适配iphone的情况下:
 ![image](https://github.com/boybing/pic/blob/master/storyboardPro.png)
 可以看到尺寸会根据px的增减,做相应的增减
 
