@@ -92,8 +92,6 @@ static char bz_phonec = '\0';
     if ([UIScreen mainScreen].bounds.size.width/[UIScreen mainScreen].bounds.size.height>0.6 && 1>[UIScreen mainScreen].bounds.size.width/[UIScreen mainScreen].bounds.size.height){
         self.padc();
     }
-    padr = nil;
-    padc = nil;
 }
 
 -(void)BZLayoutIphoneWillChangeWhenTransitionRegular:(void (^)(void))phoner Compact:(void (^)(void))phonec{
@@ -106,7 +104,5 @@ static char bz_phonec = '\0';
     if ([UIScreen mainScreen].bounds.size.width/[UIScreen mainScreen].bounds.size.height>0.6){
         NSLog(@"This is Ipad's Screen Size,if you want use 'BZLayoutIphoneWillChangeWhenTransitionRegular: Compact:' please use Iphone's Screen Size");
     }
-    phoner = nil;
-    phonec = nil;
 }
 @end

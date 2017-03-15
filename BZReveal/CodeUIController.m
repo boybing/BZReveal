@@ -22,7 +22,10 @@
     /**
      _vv is created by xib,also it can change the size by method BZLayoutViewWithViewFrame:SuperView:
      */
-    [_vv BZLayoutViewWithViewFrame:CGRectMake(10, 44, 355, 50) SuperView:self.view];
+    BZRevealInvariable *md = [[BZRevealInvariable alloc]init];
+//    md.type = BZRevealTypeInvariableTop | BZRevealTypeInvariableLeft;
+    md.attr = BZRevealAttributeFont;
+    [_vv BZLayoutViewWithViewFrame:CGRectMake(10, 44, 355, 50) SuperView:self.view Invariable:nil];
 }
 
 - (void)didReceiveMemoryWarning {
