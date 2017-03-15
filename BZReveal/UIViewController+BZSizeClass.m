@@ -47,6 +47,13 @@ static char bz_phonec = '\0';
     objc_setAssociatedObject(self, &bz_phonec, phonec, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
+-(void)viewDidDisappear:(BOOL)animated{
+    self.phonec = nil;
+    self.phoner = nil;
+    self.padc = nil;
+    self.padr = nil;
+}
+
 -(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
     
     if (size.width/size.height>1.6) {
