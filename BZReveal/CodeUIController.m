@@ -14,7 +14,6 @@
 @end
 
 @implementation CodeUIController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -22,10 +21,18 @@
     /**
      _vv is created by xib,also it can change the size by method BZLayoutViewWithViewFrame:SuperView:
      */
-    BZRevealInvariable *md = [[BZRevealInvariable alloc]init];
-//    md.type = BZRevealTypeInvariableTop | BZRevealTypeInvariableLeft;
-    md.attr = BZRevealAttributeFont;
-    [_vv BZLayoutViewWithViewFrame:CGRectMake(10, 44, 355, 50) SuperView:self.view Invariable:nil];
+    [self BZLayoutIphoneWillChangeWhenTransitionRegular:^{
+        
+    } Compact:^{
+        [_vv BZLayoutViewWithViewFrame:CGRectMake(10, 44, 355, 50) SuperView:self.view Invariable:nil];
+    }];
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

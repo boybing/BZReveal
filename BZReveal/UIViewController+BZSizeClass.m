@@ -47,7 +47,7 @@ static char bz_phonec = '\0';
     objc_setAssociatedObject(self, &bz_phonec, phonec, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
--(void)viewDidDisappear:(BOOL)animated{
+-(void)viewWillDisappear:(BOOL)animated{
     self.phonec = nil;
     self.phoner = nil;
     self.padc = nil;
