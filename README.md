@@ -1,9 +1,6 @@
 BZReveal
 ==============
 
-[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/ibireme/YYModel/master/LICENSE)&nbsp;
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)&nbsp;
-
 大家好,BZReveal是一款我写的专门配合Reveal的函数封装.
 
 首先给各位介绍一下Reveal.这是一款各位大神鼎力推荐的软件,它能帮我们快速修改UI尺寸.它的优势就在于模拟器启动后,
