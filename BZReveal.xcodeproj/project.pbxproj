@@ -7,45 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A44F1E501E4D46B400292CA9 /* BZReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = A44F1E4F1E4D46B400292CA9 /* BZReveal.m */; };
-		A45060DC1E63B48600C941B0 /* CodeUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45060DA1E63B48600C941B0 /* CodeUIController.m */; };
-		A45060DD1E63B48600C941B0 /* CodeUIController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A45060DB1E63B48600C941B0 /* CodeUIController.xib */; };
-		A49635951E567FF100ACB361 /* UIViewController+BZSizeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A49635941E567FF100ACB361 /* UIViewController+BZSizeClass.m */; };
-		A4AD09551E4AF238003C6B63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AD09541E4AF238003C6B63 /* main.m */; };
-		A4AD09581E4AF238003C6B63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AD09571E4AF238003C6B63 /* AppDelegate.m */; };
-		A4AD095B1E4AF238003C6B63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AD095A1E4AF238003C6B63 /* ViewController.m */; };
-		A4AD095E1E4AF238003C6B63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AD095C1E4AF238003C6B63 /* Main.storyboard */; };
+		A47EA3651E82538800198A8B /* BZReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EA35E1E82538800198A8B /* BZReveal.m */; };
+		A47EA3661E82538800198A8B /* BZRevealSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EA3601E82538800198A8B /* BZRevealSize.m */; };
+		A47EA3671E82538800198A8B /* UIView+BZReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EA3621E82538800198A8B /* UIView+BZReveal.m */; };
+		A47EA3681E82538800198A8B /* UIViewController+BZSizeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EA3641E82538800198A8B /* UIViewController+BZSizeClass.m */; };
+		A47EA3721E82542800198A8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EA36E1E82542800198A8B /* AppDelegate.m */; };
+		A47EA3731E82542800198A8B /* CodeUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EA3701E82542800198A8B /* CodeUIController.m */; };
+		A47EA3741E82542800198A8B /* CodeUIController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47EA3711E82542800198A8B /* CodeUIController.xib */; };
+		A47EA3771E82543E00198A8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EA3761E82543E00198A8B /* ViewController.m */; };
+		A47EA37A1E82546100198A8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47EA3781E82546100198A8B /* Main.storyboard */; };
+		A47EA37F1E82547C00198A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47EA37D1E82547C00198A8B /* LaunchScreen.storyboard */; };
+		A47EA3811E82548700198A8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EA3801E82548700198A8B /* main.m */; };
+		A47EA3831E8254D200198A8B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A47EA3821E8254D200198A8B /* Info.plist */; };
+		A47EA38B1E8255D600198A8B /* BZRevealExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EA38A1E8255D600198A8B /* BZRevealExampleUITests.m */; };
+		A47EA3991E8255EC00198A8B /* BZRevealExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EA3981E8255EC00198A8B /* BZRevealExampleTests.m */; };
 		A4AD09601E4AF238003C6B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4AD095F1E4AF238003C6B63 /* Assets.xcassets */; };
-		A4AD09631E4AF238003C6B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AD09611E4AF238003C6B63 /* LaunchScreen.storyboard */; };
-		A4AD09731E4AF4AF003C6B63 /* UIView+BZReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AD09721E4AF4AF003C6B63 /* UIView+BZReveal.m */; };
-		A4AD09761E4B062B003C6B63 /* BZRevealSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AD09751E4B062B003C6B63 /* BZRevealSize.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A47EA38D1E8255D600198A8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4AD09481E4AF238003C6B63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4AD094F1E4AF238003C6B63;
+			remoteInfo = BZReveal;
+		};
+		A47EA39B1E8255EC00198A8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4AD09481E4AF238003C6B63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4AD094F1E4AF238003C6B63;
+			remoteInfo = BZReveal;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		A44F1E4F1E4D46B400292CA9 /* BZReveal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZReveal.m; sourceTree = "<group>"; };
-		A45060D91E63B48600C941B0 /* CodeUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeUIController.h; sourceTree = "<group>"; };
-		A45060DA1E63B48600C941B0 /* CodeUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeUIController.m; sourceTree = "<group>"; };
-		A45060DB1E63B48600C941B0 /* CodeUIController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CodeUIController.xib; sourceTree = "<group>"; };
-		A49635931E567FF100ACB361 /* UIViewController+BZSizeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BZSizeClass.h"; sourceTree = "<group>"; };
-		A49635941E567FF100ACB361 /* UIViewController+BZSizeClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BZSizeClass.m"; sourceTree = "<group>"; };
+		A47EA35D1E82538800198A8B /* BZReveal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZReveal.h; sourceTree = "<group>"; };
+		A47EA35E1E82538800198A8B /* BZReveal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZReveal.m; sourceTree = "<group>"; };
+		A47EA35F1E82538800198A8B /* BZRevealSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZRevealSize.h; sourceTree = "<group>"; };
+		A47EA3601E82538800198A8B /* BZRevealSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZRevealSize.m; sourceTree = "<group>"; };
+		A47EA3611E82538800198A8B /* UIView+BZReveal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BZReveal.h"; sourceTree = "<group>"; };
+		A47EA3621E82538800198A8B /* UIView+BZReveal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BZReveal.m"; sourceTree = "<group>"; };
+		A47EA3631E82538800198A8B /* UIViewController+BZSizeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BZSizeClass.h"; sourceTree = "<group>"; };
+		A47EA3641E82538800198A8B /* UIViewController+BZSizeClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BZSizeClass.m"; sourceTree = "<group>"; };
+		A47EA36D1E82542800198A8B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BZRevealExample/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		A47EA36E1E82542800198A8B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = BZRevealExample/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		A47EA36F1E82542800198A8B /* CodeUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodeUIController.h; path = BZRevealExample/CodeUIController.h; sourceTree = SOURCE_ROOT; };
+		A47EA3701E82542800198A8B /* CodeUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodeUIController.m; path = BZRevealExample/CodeUIController.m; sourceTree = SOURCE_ROOT; };
+		A47EA3711E82542800198A8B /* CodeUIController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CodeUIController.xib; path = BZRevealExample/CodeUIController.xib; sourceTree = SOURCE_ROOT; };
+		A47EA3751E82543E00198A8B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = BZRevealExample/ViewController.h; sourceTree = SOURCE_ROOT; };
+		A47EA3761E82543E00198A8B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = BZRevealExample/ViewController.m; sourceTree = SOURCE_ROOT; };
+		A47EA3791E82546100198A8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BZRevealExample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		A47EA37E1E82547C00198A8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BZRevealExample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		A47EA3801E82548700198A8B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BZRevealExample/main.m; sourceTree = SOURCE_ROOT; };
+		A47EA3821E8254D200198A8B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BZRevealExample/Info.plist; sourceTree = SOURCE_ROOT; };
+		A47EA3881E8255D600198A8B /* BZRevealExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BZRevealExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47EA38A1E8255D600198A8B /* BZRevealExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZRevealExampleUITests.m; sourceTree = "<group>"; };
+		A47EA38C1E8255D600198A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47EA3961E8255EC00198A8B /* BZRevealExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BZRevealExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47EA3981E8255EC00198A8B /* BZRevealExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZRevealExampleTests.m; sourceTree = "<group>"; };
+		A47EA39A1E8255EC00198A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4AD09501E4AF238003C6B63 /* BZReveal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BZReveal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4AD09541E4AF238003C6B63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A4AD09561E4AF238003C6B63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A4AD09571E4AF238003C6B63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A4AD09591E4AF238003C6B63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A4AD095A1E4AF238003C6B63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A4AD095D1E4AF238003C6B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4AD095F1E4AF238003C6B63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A4AD09621E4AF238003C6B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A4AD09641E4AF238003C6B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4AD096B1E4AF3E0003C6B63 /* BZReveal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZReveal.h; sourceTree = "<group>"; };
-		A4AD09711E4AF4AF003C6B63 /* UIView+BZReveal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BZReveal.h"; sourceTree = "<group>"; };
-		A4AD09721E4AF4AF003C6B63 /* UIView+BZReveal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BZReveal.m"; sourceTree = "<group>"; };
-		A4AD09741E4B062B003C6B63 /* BZRevealSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZRevealSize.h; sourceTree = "<group>"; };
-		A4AD09751E4B062B003C6B63 /* BZRevealSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZRevealSize.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A47EA3851E8255D600198A8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47EA3931E8255EC00198A8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4AD094D1E4AF238003C6B63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,10 +96,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A47EA36C1E8253FD00198A8B /* BZRevealExample */ = {
+			isa = PBXGroup;
+			children = (
+				A4AD09531E4AF238003C6B63 /* Supporting Files */,
+				A47EA3751E82543E00198A8B /* ViewController.h */,
+				A47EA3761E82543E00198A8B /* ViewController.m */,
+				A47EA3781E82546100198A8B /* Main.storyboard */,
+				A4AD095F1E4AF238003C6B63 /* Assets.xcassets */,
+				A47EA37D1E82547C00198A8B /* LaunchScreen.storyboard */,
+				A47EA3821E8254D200198A8B /* Info.plist */,
+				A47EA36D1E82542800198A8B /* AppDelegate.h */,
+				A47EA36E1E82542800198A8B /* AppDelegate.m */,
+				A47EA36F1E82542800198A8B /* CodeUIController.h */,
+				A47EA3701E82542800198A8B /* CodeUIController.m */,
+				A47EA3711E82542800198A8B /* CodeUIController.xib */,
+			);
+			name = BZRevealExample;
+			path = BZReveal;
+			sourceTree = "<group>";
+		};
+		A47EA3891E8255D600198A8B /* BZRevealExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A47EA38A1E8255D600198A8B /* BZRevealExampleUITests.m */,
+				A47EA38C1E8255D600198A8B /* Info.plist */,
+			);
+			path = BZRevealExampleUITests;
+			sourceTree = "<group>";
+		};
+		A47EA3971E8255EC00198A8B /* BZRevealExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A47EA3981E8255EC00198A8B /* BZRevealExampleTests.m */,
+				A47EA39A1E8255EC00198A8B /* Info.plist */,
+			);
+			path = BZRevealExampleTests;
+			sourceTree = "<group>";
+		};
 		A4AD09471E4AF238003C6B63 = {
 			isa = PBXGroup;
 			children = (
 				A4AD09521E4AF238003C6B63 /* BZReveal */,
+				A47EA36C1E8253FD00198A8B /* BZRevealExample */,
+				A47EA3891E8255D600198A8B /* BZRevealExampleUITests */,
+				A47EA3971E8255EC00198A8B /* BZRevealExampleTests */,
 				A4AD09511E4AF238003C6B63 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				A4AD09501E4AF238003C6B63 /* BZReveal.app */,
+				A47EA3881E8255D600198A8B /* BZRevealExampleUITests.xctest */,
+				A47EA3961E8255EC00198A8B /* BZRevealExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,19 +158,14 @@
 		A4AD09521E4AF238003C6B63 /* BZReveal */ = {
 			isa = PBXGroup;
 			children = (
-				A4AD096A1E4AF29C003C6B63 /* BZReveal */,
-				A4AD09561E4AF238003C6B63 /* AppDelegate.h */,
-				A4AD09571E4AF238003C6B63 /* AppDelegate.m */,
-				A45060D91E63B48600C941B0 /* CodeUIController.h */,
-				A45060DA1E63B48600C941B0 /* CodeUIController.m */,
-				A45060DB1E63B48600C941B0 /* CodeUIController.xib */,
-				A4AD09591E4AF238003C6B63 /* ViewController.h */,
-				A4AD095A1E4AF238003C6B63 /* ViewController.m */,
-				A4AD095C1E4AF238003C6B63 /* Main.storyboard */,
-				A4AD095F1E4AF238003C6B63 /* Assets.xcassets */,
-				A4AD09611E4AF238003C6B63 /* LaunchScreen.storyboard */,
-				A4AD09641E4AF238003C6B63 /* Info.plist */,
-				A4AD09531E4AF238003C6B63 /* Supporting Files */,
+				A47EA35D1E82538800198A8B /* BZReveal.h */,
+				A47EA35E1E82538800198A8B /* BZReveal.m */,
+				A47EA35F1E82538800198A8B /* BZRevealSize.h */,
+				A47EA3601E82538800198A8B /* BZRevealSize.m */,
+				A47EA3611E82538800198A8B /* UIView+BZReveal.h */,
+				A47EA3621E82538800198A8B /* UIView+BZReveal.m */,
+				A47EA3631E82538800198A8B /* UIViewController+BZSizeClass.h */,
+				A47EA3641E82538800198A8B /* UIViewController+BZSizeClass.m */,
 			);
 			path = BZReveal;
 			sourceTree = "<group>";
@@ -95,29 +173,50 @@
 		A4AD09531E4AF238003C6B63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A4AD09541E4AF238003C6B63 /* main.m */,
+				A47EA3801E82548700198A8B /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A4AD096A1E4AF29C003C6B63 /* BZReveal */ = {
-			isa = PBXGroup;
-			children = (
-				A4AD096B1E4AF3E0003C6B63 /* BZReveal.h */,
-				A44F1E4F1E4D46B400292CA9 /* BZReveal.m */,
-				A4AD09711E4AF4AF003C6B63 /* UIView+BZReveal.h */,
-				A4AD09721E4AF4AF003C6B63 /* UIView+BZReveal.m */,
-				A4AD09741E4B062B003C6B63 /* BZRevealSize.h */,
-				A4AD09751E4B062B003C6B63 /* BZRevealSize.m */,
-				A49635931E567FF100ACB361 /* UIViewController+BZSizeClass.h */,
-				A49635941E567FF100ACB361 /* UIViewController+BZSizeClass.m */,
-			);
-			name = BZReveal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A47EA3871E8255D600198A8B /* BZRevealExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47EA38F1E8255D600198A8B /* Build configuration list for PBXNativeTarget "BZRevealExampleUITests" */;
+			buildPhases = (
+				A47EA3841E8255D600198A8B /* Sources */,
+				A47EA3851E8255D600198A8B /* Frameworks */,
+				A47EA3861E8255D600198A8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A47EA38E1E8255D600198A8B /* PBXTargetDependency */,
+			);
+			name = BZRevealExampleUITests;
+			productName = BZRevealExampleUITests;
+			productReference = A47EA3881E8255D600198A8B /* BZRevealExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A47EA3951E8255EC00198A8B /* BZRevealExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47EA39D1E8255EC00198A8B /* Build configuration list for PBXNativeTarget "BZRevealExampleTests" */;
+			buildPhases = (
+				A47EA3921E8255EC00198A8B /* Sources */,
+				A47EA3931E8255EC00198A8B /* Frameworks */,
+				A47EA3941E8255EC00198A8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A47EA39C1E8255EC00198A8B /* PBXTargetDependency */,
+			);
+			name = BZRevealExampleTests;
+			productName = BZRevealExampleTests;
+			productReference = A47EA3961E8255EC00198A8B /* BZRevealExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A4AD094F1E4AF238003C6B63 /* BZReveal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4AD09671E4AF238003C6B63 /* Build configuration list for PBXNativeTarget "BZReveal" */;
@@ -144,6 +243,18 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = bingzaiJoker;
 				TargetAttributes = {
+					A47EA3871E8255D600198A8B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RAAN75SRP6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A4AD094F1E4AF238003C6B63;
+					};
+					A47EA3951E8255EC00198A8B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RAAN75SRP6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A4AD094F1E4AF238003C6B63;
+					};
 					A4AD094F1E4AF238003C6B63 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = RAAN75SRP6;
@@ -165,55 +276,101 @@
 			projectRoot = "";
 			targets = (
 				A4AD094F1E4AF238003C6B63 /* BZReveal */,
+				A47EA3871E8255D600198A8B /* BZRevealExampleUITests */,
+				A47EA3951E8255EC00198A8B /* BZRevealExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A47EA3861E8255D600198A8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47EA3941E8255EC00198A8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4AD094E1E4AF238003C6B63 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4AD09631E4AF238003C6B63 /* LaunchScreen.storyboard in Resources */,
+				A47EA37A1E82546100198A8B /* Main.storyboard in Resources */,
 				A4AD09601E4AF238003C6B63 /* Assets.xcassets in Resources */,
-				A45060DD1E63B48600C941B0 /* CodeUIController.xib in Resources */,
-				A4AD095E1E4AF238003C6B63 /* Main.storyboard in Resources */,
+				A47EA3741E82542800198A8B /* CodeUIController.xib in Resources */,
+				A47EA3831E8254D200198A8B /* Info.plist in Resources */,
+				A47EA37F1E82547C00198A8B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A47EA3841E8255D600198A8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47EA38B1E8255D600198A8B /* BZRevealExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47EA3921E8255EC00198A8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47EA3991E8255EC00198A8B /* BZRevealExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4AD094C1E4AF238003C6B63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4AD095B1E4AF238003C6B63 /* ViewController.m in Sources */,
-				A49635951E567FF100ACB361 /* UIViewController+BZSizeClass.m in Sources */,
-				A45060DC1E63B48600C941B0 /* CodeUIController.m in Sources */,
-				A4AD09581E4AF238003C6B63 /* AppDelegate.m in Sources */,
-				A4AD09761E4B062B003C6B63 /* BZRevealSize.m in Sources */,
-				A4AD09551E4AF238003C6B63 /* main.m in Sources */,
-				A4AD09731E4AF4AF003C6B63 /* UIView+BZReveal.m in Sources */,
-				A44F1E501E4D46B400292CA9 /* BZReveal.m in Sources */,
+				A47EA3771E82543E00198A8B /* ViewController.m in Sources */,
+				A47EA3661E82538800198A8B /* BZRevealSize.m in Sources */,
+				A47EA3731E82542800198A8B /* CodeUIController.m in Sources */,
+				A47EA3671E82538800198A8B /* UIView+BZReveal.m in Sources */,
+				A47EA3681E82538800198A8B /* UIViewController+BZSizeClass.m in Sources */,
+				A47EA3651E82538800198A8B /* BZReveal.m in Sources */,
+				A47EA3811E82548700198A8B /* main.m in Sources */,
+				A47EA3721E82542800198A8B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A47EA38E1E8255D600198A8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4AD094F1E4AF238003C6B63 /* BZReveal */;
+			targetProxy = A47EA38D1E8255D600198A8B /* PBXContainerItemProxy */;
+		};
+		A47EA39C1E8255EC00198A8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4AD094F1E4AF238003C6B63 /* BZReveal */;
+			targetProxy = A47EA39B1E8255EC00198A8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		A4AD095C1E4AF238003C6B63 /* Main.storyboard */ = {
+		A47EA3781E82546100198A8B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A4AD095D1E4AF238003C6B63 /* Base */,
+				A47EA3791E82546100198A8B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A4AD09611E4AF238003C6B63 /* LaunchScreen.storyboard */ = {
+		A47EA37D1E82547C00198A8B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A4AD09621E4AF238003C6B63 /* Base */,
+				A47EA37E1E82547C00198A8B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -221,6 +378,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A47EA3901E8255D600198A8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = RAAN75SRP6;
+				INFOPLIST_FILE = BZRevealExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.sunyard.com.BZRevealExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BZReveal;
+			};
+			name = Debug;
+		};
+		A47EA3911E8255D600198A8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = RAAN75SRP6;
+				INFOPLIST_FILE = BZRevealExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.sunyard.com.BZRevealExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BZReveal;
+			};
+			name = Release;
+		};
+		A47EA39E1E8255EC00198A8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RAAN75SRP6;
+				INFOPLIST_FILE = BZRevealExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.sunyard.com.BZRevealExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BZReveal.app/BZReveal";
+			};
+			name = Debug;
+		};
+		A47EA39F1E8255EC00198A8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RAAN75SRP6;
+				INFOPLIST_FILE = BZRevealExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.sunyard.com.BZRevealExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BZReveal.app/BZReveal";
+			};
+			name = Release;
+		};
 		A4AD09651E4AF238003C6B63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -316,7 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RAAN75SRP6;
-				INFOPLIST_FILE = BZReveal/Info.plist;
+				INFOPLIST_FILE = BZRevealExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bz.BZReveal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,7 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RAAN75SRP6;
-				INFOPLIST_FILE = BZReveal/Info.plist;
+				INFOPLIST_FILE = BZRevealExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bz.BZReveal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,6 +551,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A47EA38F1E8255D600198A8B /* Build configuration list for PBXNativeTarget "BZRevealExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47EA3901E8255D600198A8B /* Debug */,
+				A47EA3911E8255D600198A8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A47EA39D1E8255EC00198A8B /* Build configuration list for PBXNativeTarget "BZRevealExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47EA39E1E8255EC00198A8B /* Debug */,
+				A47EA39F1E8255EC00198A8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A4AD094B1E4AF238003C6B63 /* Build configuration list for PBXProject "BZReveal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

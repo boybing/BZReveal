@@ -28,6 +28,46 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A47EA3231E824F5700198A8B"
+               BuildableName = "BZRevealUITests.xctest"
+               BlueprintName = "BZRevealUITests"
+               ReferencedContainer = "container:BZReveal.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A47EA3311E824F6500198A8B"
+               BuildableName = "BZRevealTests.xctest"
+               BlueprintName = "BZRevealTests"
+               ReferencedContainer = "container:BZReveal.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A47EA3871E8255D600198A8B"
+               BuildableName = "BZRevealExampleUITests.xctest"
+               BlueprintName = "BZRevealExampleUITests"
+               ReferencedContainer = "container:BZReveal.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A47EA3951E8255EC00198A8B"
+               BuildableName = "BZRevealExampleTests.xctest"
+               BlueprintName = "BZRevealExampleTests"
+               ReferencedContainer = "container:BZReveal.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

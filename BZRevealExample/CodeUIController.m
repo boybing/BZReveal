@@ -21,11 +21,7 @@
     /**
      _vv is created by xib,also it can change the size by method BZLayoutViewWithViewFrame:SuperView:
      */
-    [self BZLayoutIphoneWillChangeWhenTransitionRegular:^{
-        
-    } Compact:^{
-        [_vv BZLayoutViewWithViewFrame:CGRectMake(10, 44, 355, 50) SuperView:self.view Invariable:nil];
-    }];
+    [_vv BZLayoutViewWithViewFrame:CGRectMake(10, 44, 355, 50) SuperView:self.view Invariable:nil];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
