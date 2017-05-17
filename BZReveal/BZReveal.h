@@ -16,6 +16,8 @@
 #endif
 #define SCW [BZScreen ScreensharedManager].scWidth
 #define SCH [BZScreen ScreensharedManager].scHeight
+#define SW [UIScreen mainScreen].bounds.size.width
+#define SH [UIScreen mainScreen].bounds.size.height
 @interface BZRevealDefalut : NSObject
 /**
  DefaultTop Flag
