@@ -14,6 +14,8 @@
 #import "UIView+BZReveal.h"
 #import "UIViewController+BZSizeClass.h"
 #endif
+#define SCW [BZScreen ScreensharedManager].scWidth
+#define SCH [BZScreen ScreensharedManager].scHeight
 @interface BZRevealDefalut : NSObject
 /**
  DefaultTop Flag
