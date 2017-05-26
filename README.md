@@ -40,8 +40,8 @@
 ## <a id="How to use BZReveal"></a>BZReveal使用方法
 * 克隆或下载项目.
 * 手动导入:
-    *“BZReveal”文件夹中所有文件拖到项目
-    * 加载主文件:“#import“BZReveal.h”
+    *'BZReveal'文件夹中所有文件拖到项目
+    * 加载主文件:'#import“BZReveal.h”'
 * 在AppDelegate中选择初始设置的屏幕大小(从适配的角度,建议选择最小的屏幕尺寸)
 
 ## <a id="BZReveal.h"></a>BZReveal.h
