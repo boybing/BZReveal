@@ -19,8 +19,7 @@
 * Manual import：
     * Drag All files in the `BZReveal` folder to project
     * Import the main file：`#import "BZReveal.h"`
-* [delegate](#the AppDelegate choosing the initial setup screen size (from the perspective of adaptation, we suggest the smallest screen size)) 
-    
+* [the AppDelegate choosing the initial setup screen size (from the perspective of adaptation, we suggest the smallest screen size)](#delegate) 
 
 ## BZReveal
 * 轻松布局
@@ -43,7 +42,7 @@
 * 手动导入:
     *“BZReveal”文件夹中所有文件拖到项目
     * 加载主文件:“#import“BZReveal.h”
-* [delegate](#在AppDelegate中选择初始设置的屏幕大小(从适配的角度,建议选择最小的屏幕尺寸)) 
+* [在AppDelegate中选择初始设置的屏幕大小(从适配的角度,建议选择最小的屏幕尺寸)](#delegate) 
 
 ## <a id="BZReveal.h"></a>BZReveal.h
 ```objc
