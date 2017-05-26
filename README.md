@@ -19,7 +19,7 @@
 * Manual import：
     * Drag All files in the `BZReveal` folder to project
     * Import the main file：`#import "BZReveal.h"`
-* [the AppDelegate choosing the initial setup screen size (from the perspective of adaptation, we suggest the smallest screen size)](#delegate) 
+* the AppDelegate choosing the initial setup screen size (from the perspective of adaptation, we suggest the smallest screen size)
 
 ## BZReveal
 * 轻松布局
@@ -42,7 +42,7 @@
 * 手动导入:
     *“BZReveal”文件夹中所有文件拖到项目
     * 加载主文件:“#import“BZReveal.h”
-* [在AppDelegate中选择初始设置的屏幕大小(从适配的角度,建议选择最小的屏幕尺寸)](#delegate) 
+* 在AppDelegate中选择初始设置的屏幕大小(从适配的角度,建议选择最小的屏幕尺寸)
 
 ## <a id="BZReveal.h"></a>BZReveal.h
 ```objc
@@ -415,16 +415,14 @@ typedef void (^Trans) ();
 @end
 ```
 
-## <a id="delegate"></a>Examples
-```
-```
-	* The AppDelegate. h determine the edit screen size
+## Examples
+* The AppDelegate. h determine the edit screen size
 ![image](https://github.com/boybing/pic/blob/master/delegate.png)
-	* Stroyboard defined in the view
+* Stroyboard defined in the view
 ![image](https://github.com/boybing/pic/blob/master/stroyboard.png)
-	* Pass reveal hot change the view
+* Pass reveal hot change the view
 ![image](https://github.com/boybing/pic/blob/master/storyChangeR.png)
-	* After data editing in the iphone SE simulator
+* After data editing in the iphone SE simulator
 ![image](https://github.com/boybing/pic/blob/master/storyboardSe.png)
-	* After data editing in the ipad pro simulator
+* After data editing in the ipad pro simulator
 ![image](https://github.com/boybing/pic/blob/master/storyboardPro.png)
