@@ -415,8 +415,10 @@ typedef void (^Trans) ();
 @end
 ```
 
-* Examples
-	* <a id=“delegate”></a>The AppDelegate. h determine the edit screen size
+## <a id="delegate"></a>Examples
+```
+```
+	* The AppDelegate. h determine the edit screen size
 ![image](https://github.com/boybing/pic/blob/master/delegate.png)
 	* Stroyboard defined in the view
 ![image](https://github.com/boybing/pic/blob/master/stroyboard.png)
