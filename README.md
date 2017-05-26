@@ -1,4 +1,5 @@
 ## BZReveal
+# [中文](#zh) | english
 * Layout by an easy way
 
 ## Contents
@@ -21,7 +22,7 @@
     * Import the main file：`#import "BZReveal.h"`
 * the AppDelegate choosing the initial setup screen size (from the perspective of adaptation, we suggest the smallest screen size)
 
-## BZReveal
+## <a id ="zh"></a>BZReveal
 * 轻松布局
 
 ## 内容
