@@ -1,5 +1,5 @@
 ## BZReveal
-# [中文](#zh) | english
+[中文](#zh) | english
 * Layout by an easy way
 
 ## Contents
@@ -20,7 +20,7 @@
 * Manual import：
     * Drag All files in the `BZReveal` folder to project
     * Import the main file：`#import "BZReveal.h"`
-* the AppDelegate choosing the initial setup screen size (from the perspective of adaptation, we suggest the smallest screen size)
+* [the AppDelegate choosing the initial setup screen size (from the perspective of adaptation, we suggest the smallest screen size)](#example)
 
 ## <a id ="zh"></a>BZReveal
 * 轻松布局
@@ -43,7 +43,7 @@
 * 手动导入:
     * `BZReveal`文件夹中所有文件拖到项目
     * 加载主文件:`#import "BZReveal.h"`
-* 在AppDelegate中选择初始设置的屏幕大小(从适配的角度,建议选择最小的屏幕尺寸)
+* [在AppDelegate中选择初始设置的屏幕大小(从适配的角度,建议选择最小的屏幕尺寸)](#example)
 
 ## <a id="BZReveal.h"></a>BZReveal.h
 ```objc
@@ -416,7 +416,7 @@ typedef void (^Trans) ();
 @end
 ```
 
-## Examples
+## <a id="example"></a>Examples
 * The AppDelegate. h determine the edit screen size
 ![image](https://github.com/boybing/pic/blob/master/delegate.png)
 * Stroyboard defined in the view
