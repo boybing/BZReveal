@@ -4,8 +4,8 @@
 
 ## Contents
 * Getting Started
-    * Reveal is a UI analysis debug software, it supports preview pages heat change. And BZReveal is on the basis of the pass Reveal, modify the UI layout code quickly, improve the efficiency of programming tools.
-    * It controls will be according to the screen size scaling, including controls within the text. Of course you also by custom interface, control remain the same. Also encapsulates the sizeClass, can deal with most of the layout problem.
+    * Reveal is a UI analysis debug software, it supports preview pages heat change. And BZReveal is on the basis of the pass Reveal, modify the UI layout code quickly, improve the efficiency of programming tools
+    * It controls will be according to the screen size scaling, including controls within the text. Of course you also by custom interface, control remain the same. Also encapsulates the sizeClass, can deal with most of the layout problem
 * Comment API
 	* [BZReveal.h](#BZReveal.h)
 	* [BZRevealSize.h](#BZRevealSize.h)
@@ -27,8 +27,8 @@
 
 ## 内容
 * 开始介绍
-    	* Reveal 是一款UI分析调试软件,它支持页面热修改预览.而BZReveal是在Reveal的基础上,快速修改UI布局代码,提高编程效率的工具.
-	* 有了它控件会根据屏幕大小等比例缩放,也包括控件内的文字.当然你也通过自定义接口,让控件保持原样.还封装了SizeClass,能应对大多的布局问题.
+    	* Reveal 是一款UI分析调试软件,它支持页面热修改预览.而BZReveal是在Reveal的基础上,快速修改UI布局代码,提高编程效率的工具
+	* 有了它控件会根据屏幕大小等比例缩放,也包括控件内的文字.当然你也通过自定义接口,让控件保持原样.还封装了SizeClass,能应对大多的布局问题
 * 包含接口
 	* [BZReveal.h](#BZReveal.h)
 	* [BZRevealSize.h](#BZRevealSize.h)
@@ -39,7 +39,7 @@
 * 所有继承自UIView的控件
 
 ## <a id="How to use BZReveal"></a>BZReveal使用方法
-* 克隆或下载项目.
+* 克隆或下载项目
 * 手动导入:
     * `BZReveal`文件夹中所有文件拖到项目
     * 加载主文件:`#import "BZReveal.h"`
