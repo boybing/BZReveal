@@ -12,7 +12,7 @@
 	* [UIViewController+BZSizeClass.h](#UIViewController+BZSizeClass.h)
 	* [UIView+BZReveal.h](#UIView+BZReveal.h)
 
-## <a id="Support what kinds of controls to refresh"></a>Support what kinds of controls to refresh
+## <a id="Support what kinds of controls to refresh"></a>Support what kinds of controls
 * All inherited from the UIView controls
 
 ## <a id="How to use BZReveal"></a>How to use BZReveal
